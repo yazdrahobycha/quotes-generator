@@ -31,6 +31,10 @@ body {
     color: #2f0f5d;
 }
 
+.long-quote {
+    font-size: 2rem;
+}
+
 .quote__author {
     font-size: 1.5rem;
     font-weight: 300;
