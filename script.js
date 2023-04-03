@@ -77,3 +77,4 @@ elements.$newQuoteBtn.addEventListener('click', getRandomQuote);
 elements.$twitterBtn.addEventListener('click', tweetQuote);
 
 
+
