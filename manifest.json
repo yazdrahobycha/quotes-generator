@@ -1,0 +1,10 @@
+{
+    "theme_color": "#f635c9",
+    "background_color": "#bd10e0",
+    "display": "standalone",
+    "orientation": "portrait",
+    "start_url": ".",
+    "name": "Quote Generator PWA",
+    "short_name": "QGPWA",
+    "description": "Generating different quotes!"
+}

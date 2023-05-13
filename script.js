@@ -1,3 +1,13 @@
+if (navigator.serviceWorker) {
+    try {
+        navigator.serviceWorker.register('/sw.js')
+    } catch (e) {
+        console.log('Something went wrong while registering SW! ', e);
+    }
+} else {
+    console.log('serviseWorker is not availiable here');
+}
+
 // get Dom elements to work with
 const elements = {
     $quoteContainer: {},
@@ -40,7 +50,7 @@ function getRandomQuote() {
         elements.$quoteAuthor.textContent = 'Unknown';
     } else {
         elements.$quoteAuthor.textContent = quote.author;
-    };
+    }
     if (quote.text.length > 120) {
         elements.$quoteText.classList.add('long-quote');
     } else {
@@ -75,6 +85,3 @@ getDomElements();
 displayQuote();
 elements.$newQuoteBtn.addEventListener('click', getRandomQuote);
 elements.$twitterBtn.addEventListener('click', tweetQuote);
-
-
-
